@@ -8,10 +8,10 @@ jobs:
       - name: Check out Repository code
         uses: actions/checkout@v4
       - run: 
-        #build image
-        docker build -t riley-test-blazor-thing .
-        #run image
-        docker rm -f riley-test-blazor-thing || true
-        docker run -d -p 9876:8080 --name riley-test-blazor-thing\
-          riley-test-blazor-thing
-        echo "Made it to the end!"
+          #build image
+          docker build -t riley-test-blazor-thing .
+          #run image
+          docker rm -f riley-test-blazor-thing || true
+          docker run -d -p 9876:8080 --name riley-test-blazor-thing\
+            riley-test-blazor-thing
+          echo "Made it to the end!"
