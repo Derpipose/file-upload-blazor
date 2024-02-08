@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.SignalR;
 using web.Components;
 using web.Services;
 
+//adding a comment dododo
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.Configure<HubOptions>(options =>
