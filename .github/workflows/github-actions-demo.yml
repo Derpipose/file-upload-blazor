@@ -7,5 +7,6 @@ jobs:
     steps:
       - run: 
         docker build -t riley-test-blazor-thing .
-        docker run -d riley-test-blazor-thing
+        docker run -d -p 6003:8080 --name riley-test-blazor-thing\
+          riley-test-blazor-thing
         echo "Made it to the end!"
