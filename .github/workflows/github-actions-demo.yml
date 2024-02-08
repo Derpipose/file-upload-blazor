@@ -9,8 +9,8 @@ jobs:
       uses: actions/checkout@v4
       - run: 
         #build image
-          docker build -t riley-test-blazor-thing .
+        docker build -t riley-test-blazor-thing .
         #run image
-          docker run -d -p 6003:8080 --name riley-test-blazor-thing\
-            riley-test-blazor-thing
-          echo "Made it to the end!"
+        docker run -d -p 6003:8080 --name riley-test-blazor-thing\
+          riley-test-blazor-thing
+        echo "Made it to the end!"
