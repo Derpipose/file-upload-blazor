@@ -11,6 +11,7 @@ jobs:
         #build image
         docker build -t riley-test-blazor-thing .
         #run image
-        docker run -d -p 6003:8080 --name riley-test-blazor-thing\
+        docker rm -f riley-test-blazor-thing || true
+        docker run -d -p 9876:8080 --name riley-test-blazor-thing\
           riley-test-blazor-thing
         echo "Made it to the end!"
