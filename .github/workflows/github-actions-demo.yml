@@ -5,9 +5,9 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: self-hosted
     steps:
-      - name: Check out Repository code
+      - name: Check out repository code
         uses: actions/checkout@v4
-      - run: 
+      - run: |
           #build image
           docker build -t riley-test-blazor-thing .
           #run image
